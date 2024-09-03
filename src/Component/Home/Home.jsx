@@ -1,5 +1,7 @@
 import React from 'react';
-import mainperson from '../../assets/mainperson.png';
+// import mainperson from '../../assets/mainperson.png';
+import mainperson from '/src/assets/mainperson.png';
+
 import videoFile from '../../assets/homebannernew.mp4'; 
 import Header from '../Header'
 import Arrow from '../Arrow/Arrow';
@@ -32,7 +34,7 @@ export default function Home() {
         <Arrow/>
       </div>
     </div>
-    
+
     <div>
       <SectionA/>
     </div>
