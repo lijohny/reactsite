@@ -1,8 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import { resolve } from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  assetsInclude: ['**/*.png', '**/*.PNG'], // Include both lowercase and uppercase extensions
-})
+  assetsInclude: ['**/*.png', '**/*.PNG'],
+  resolve: {
+    alias: {
+      '@assets': resolve(__dirname, 'src/assets'), // Alias for the assets folder
+      '@components': resolve(__dirname, 'src/Component'), // Alias for the components folder
+    },
+  },
+});

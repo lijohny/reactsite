@@ -1,9 +1,9 @@
 import React from 'react';
-import mainperson from '../../assets/mainperson.png';
-import videoFile from '../../assets/homebannernew.mp4'; 
-import Header from '../Header';
-import Arrow from '../Arrow/Arrow';
-import SectionA from '../Section/SectionA';
+import mainperson from '@assets/mainperson.png';  // Using alias for assets
+import videoFile from '@assets/homebannernew.mp4';
+import Header from '@components/Header';          // Using alias for components
+import Arrow from '@components/Arrow/Arrow';
+import SectionA from '@components/Section/SectionA';
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
                   Li<span className='text-gray-500 maintextstyling'>JO</span> <span className='text-gray-500 maintextstyling'>JO</span><span className="text-[#A4C639]">HNEY</span><span className="text-gray-500 maintextstyling">.s</span>
                 </h1>
                 {/* Subtitle and Image */}
-                <div className='flex items-center gap-[10px] justify-center'>
+                <div className='flex items-center gap-[10px] justify-start'>
                   <h2 className='text-[#b7b7ba] font-bold dancing'>Day by day I Make My Way</h2>
                   <img src={mainperson} alt="Main Person" className="w-full max-w-[70px] object-contain"/>
                 </div> 
