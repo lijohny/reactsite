@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  assetsInclude: ['**/*.png', '**/*.PNG'],
+  assetsInclude: ['**/*.png', '**/*.PNG'], // Handles both lowercase and uppercase file extensions
   resolve: {
     alias: {
       '@assets': resolve(__dirname, 'src/assets'), // Alias for the assets folder
