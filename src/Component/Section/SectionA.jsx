@@ -4,7 +4,7 @@ import developer from '../../assets/develpping.PNG'
 function SectionA() {
   return (
 
-    <div className="bg-white dark:bg-black h-screen flex items-center justify-center">
+    <div id='developeraboutsection' className="bg-white dark:bg-black h-screen flex items-center justify-center">
         <div className='container mx-auto px-5 2xl:px-40 '>
             <div className='flex items-center justify-between w-full'>
                 <div className='w-full'>
